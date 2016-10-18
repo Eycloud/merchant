@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 class ShopResource(MerchantResource, ParserMixin):
 
     def get(self, shop_id=None):
-        logging.info("Get shop_id %s" % shop_id)
+        logger.info("Get shop_id %s" % shop_id)
         if shop_id is not None:
             res = Shop.get(shop_id)
         else:
