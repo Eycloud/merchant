@@ -2,6 +2,7 @@
 
 from resource import MerchantResource
 from parser import ParserMixin
-from exceptions import NotFoundResourceException
+from exceptions import NotFoundResourceException, CannotAddResourceException
 
-__all__ = ['MerchantResource', 'ParserMixin', 'NotFoundResourceException']
+__all__ = ['MerchantResource', 'ParserMixin', 'NotFoundResourceException',
+           'CannotAddResourceException']

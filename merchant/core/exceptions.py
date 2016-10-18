@@ -23,3 +23,9 @@ class NotFoundResourceException(MerchantException):
 
     def __init__(self, msg, status_code=404, payload=None):
         super(NotFoundResourceException, self).__init__(msg, status_code, payload)
+
+
+class CannotAddResourceException(MerchantException):
+
+    def __init__(self, msg, status_code=412, payload=None):
+        super(CannotAddResourceException, self).__init__(msg, status_code, payload)
